@@ -1,0 +1,166 @@
+.header-container {
+  display: grid;
+  justify-items: center;
+  background-image: url(https://tse2.mm.bing.net/th?id=OIP.zDqlm5NPBQ3-Wh0FpNCSjAHaEo&pid=Api&P=0&h=180);
+  padding: 15px;
+}
+
+.header-container h1 {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header-container p {
+  width: 600px;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header-container, .about-web-app h2, .about-content p, .message {
+  text-align: center;
+  margin: 5px 0;
+}
+
+h1 {
+  margin: 5px;
+}
+
+button {
+  color: white;
+  background-color: orangered;
+  padding: 20px;
+}
+
+.about-web-app {
+  display: grid;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+  grid-gap: 30px;
+  padding: 15px;
+  margin: 0 40px;
+}
+
+.services {
+  display: grid;
+  padding: 20px 350px;
+  grid-template-areas: "service1 service2 service3";
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(51, 51, 180);
+}
+
+.services img {
+  width: 150px;
+  height: 75px;
+}
+
+.cta {
+  background: white;
+	border: 1px solid white;
+  width: 150px;
+  height: 300px;
+	text-align: center;
+  margin: 20px;
+	padding: 10px;
+}
+
+.service-1 {grid-area: service1;}
+.service-2 {grid-area: service2;}
+.service-3 {grid-area: service3;}
+
+.cta p {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.message {
+  padding: 5px;
+}
+
+.message p {
+  display: grid;
+  align-items: center;
+  margin: 0 150px;
+}
+
+.bottom-of-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.contact, .rad-stuff {
+  display: grid;
+  justify-items: center;
+  padding: 0 30px;
+}
+
+.contact p, .rad-stuff p{
+  color: white;
+  display: grid;
+  text-align: center;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.contact {
+  color: white;
+  background-color: rgb(23, 23, 230);
+}
+
+contact, .rad-stuff p {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.rad-stuff {
+  color: white;
+  background-color: rgb(8, 8, 82);
+} 
+
+@media (max-width: 700px) {
+
+  /* body {
+    color:blue;
+  } */
+
+  .header-container p {
+    width: fit-content;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  button {
+    padding:10px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+  }
+
+  .cta {
+    display: flex;
+    background-size: cover;
+    width: fit-content;
+    height: fit-content;
+    justify-items: start;
+  }
+
+  .about-content {
+    text-align: center;
+    padding: 15px;
+    margin: 0 40px;
+  }
+
+  .bottom-of-page {
+    display: flex;
+    flex-direction: column;
+  }
+}
